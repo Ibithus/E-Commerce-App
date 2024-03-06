@@ -114,6 +114,10 @@ html {
   position: relative;
 }
 
+.menu__list--link.link__hover-effect::before {
+  background-color: white;
+}
+
 .menu__list--link:hover.link__hover-effect::before {
   background-color: white;
   opacity: 1;
@@ -312,6 +316,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .featured__book--list {
@@ -360,6 +365,7 @@ header {
 .book__title {
   font-size: 16px;
   text-align: center;
+  margin-top: 12px;
   margin-bottom: 12px;
   transition: all 300ms ease;
 }
@@ -408,7 +414,7 @@ footer {
 
 .footer__link {
   color: white;
-  margin: 0 48px;
+  margin: 0 24px;
   position: relative;
 }
 
@@ -437,4 +443,61 @@ footer .link__hover-effect::before {
   .menu__button {
     visibility: visible;
   }
+  .header__title {
+    font-size: 32px;
+    max-width: 400px;
+  }
+
+  /* Features */
+  .section__title {
+    font-size: 28px;
+  }
+  .feature__list {
+    flex-wrap: wrap;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .feature__info--para {
+    max-width: 200px;
+  }
+
+  /* Featured Books */
+  .book {
+    width: 40%;
+  }
+}
+
+@media (max-width:572px) {
+    .header__title {
+        max-width: 400px;
+    }
+    .header__subtitle {
+        font-size: 18px;
+    }
+    .header__button {
+        font-size: 16px;
+    }
+
+    /* Features */
+    .feature__info--title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:450px) {
+    .footer__link--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer__link {
+        margin: 24px 0;
+    }
+
+    .fa-star {
+        font-size: 12px;
+    }
 }
