@@ -308,7 +308,7 @@ header {
 
 footer {
     background-color: #242424;
-    padding: 96px 24px;
+    padding: 48px 24px;
 }
 
 .footer__container {
@@ -350,4 +350,8 @@ footer .link__hover-effect::before {
     position: absolute;
     width: 100%;
     left: 0;
+  }
+
+  .footer__copyright {
+    color: white;
   }
