@@ -40,7 +40,13 @@ html {
 }
 
 .section__title {
-    font-size: 32px;
+  font-size: 32px;
+}
+
+.row {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /*Navigation*/
@@ -116,9 +122,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
   padding-top: 96px;
 }
 
@@ -176,57 +179,54 @@ header {
 
 /* About */
 
-#about {
-    background-color: white;
+#features {
+  background-color: white;
 }
 
-.about__container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 96px 0 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.feature__container {
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about__list {
-    padding: 48px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.feature__list {
+  padding: 48px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.about {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.feature {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.about__icon--wrapper {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    margin-bottom: 24px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.feature__icon--wrapper {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about__icon  {
-    font-size: 32px;
-    color: #7342d6;
+.feature__icon {
+  font-size: 32px;
+  color: #7342d6;
 }
 
-.about__info--title {
-    margin-bottom: 24px;
-    font-size: 20px;
+.feature__info--title {
+  margin-bottom: 24px;
+  font-size: 20px;
 }
 
-.about__info--para {
-    max-width: 270px;
+.feature__info--para {
+  max-width: 270px;
 }
