@@ -73,7 +73,7 @@ html {
 }
 
 .backdrop__menu {
-  visibility: hidden;
+  opacity: 0;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -84,10 +84,38 @@ html {
   flex-direction: column;
   min-height: 100vh;
   background-color: #242424;
+  transition: all 300ms ease;
 }
 
+.menu__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__list--link {
+  color: white;
+  font-size: 24px;
+  margin: 32px 0;
+  position: relative;
+}
+
+.menu__list--link:hover.link__hover-effect::before {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: white;
+  }
+
 .menu__open .backdrop__menu {
-  visibility: visible;
+  opacity: 1;
+}
+
+.menu__open .menu__button {
+  color: white;
 }
 
 /*Navigation*/
