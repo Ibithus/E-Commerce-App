@@ -8,8 +8,6 @@ function toggleMenu() {
   document.body.classList += " menu__open";
 }
 
-// From Here
-
 function renderBooks(filter) {
   const booksWrapper = document.querySelector(".books");
   const books = getBooks();
@@ -48,20 +46,6 @@ function filteredBooks(event) {
   console.log(event);
   renderBooks(event.target.value);
 }
-
-function ogValue(insertedValue) {
-  let originalValue = 5;
-  if (insertedValue) {
-    originalValue = insertedValue
-  }
-  console.log(originalValue);
-}
-
-function sendValue() {
-  ogValue(10);
-}
-
-sendValue();
 
 renderBooks();
 
