@@ -35,139 +35,36 @@
       </nav>
       <div id="latest__books flex flex-1">
         <div class="featured__book--container row">
-          <h1 class="section__title">
-            Latest <span class="text__purple">Books</span>
-          </h1>
+          <div class="books__header">
+            <h1 class="section__title">
+              Latest <span class="text__purple">Books</span>
+            </h1>
+            <select id="filter" onchange="filteredBooks(event)">
+              <option value="" disabled selected>Sort</option>
+              <option value="low__to--high">Price, Low to High</option>
+              <option value="high__to--low">Price, High to Low</option>
+              <option value="ratings">Rating</option>
+            </select>
+          </div>
           <div class="featured__book--list">
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-1.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">The 10X Rule</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-2.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">Be Obsessed Or Be Average</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-3.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">Rich Dad Poor Dad</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-4.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">Cashflow Quadrant</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-5.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">48 Laws Of Power</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-6.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">The 5 Second Rule</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-7.jpg" alt="" />
-              </figure>
-              <h1 class="book__title">Your Next 5 Moves</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
-            <div class="book">
-              <figure class="book__image--wrapper">
-                <img class="book__image" src="./Assets/book-8.jpeg" alt="" />
-              </figure>
-              <h1 class="book__title">Mastery</h1>
-              <div class="book__rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="book__price">£9.99</span>
-            </div>
+            <div class="books"></div>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer__container row">
-          <div class="footer__logo--wrapper">
-            <img class="footer__logo" src="./Assets/Library.png" alt="" />
-          </div>
-          <div class="footer__link--wrapper">
-            <a class="footer__link link__hover-effect" href="">Home</a>
-            <a class="footer__link link__hover-effect" href="">About</a>
-            <a class="footer__link link__hover-effect" href="">Books</a>
-            <a class="footer__link link__hover-effect" href="">Contact</a>
-          </div>
-          <p class="footer__copyright">Copyright © 2023 Ibrahim Ahmed</p>
-        </div>
-      </footer>
     </section>
+    <footer>
+      <div class="footer__container row">
+        <div class="footer__logo--wrapper">
+          <img class="footer__logo" src="./Assets/Library.png" alt="" />
+        </div>
+        <div class="footer__link--wrapper">
+          <a class="footer__link link__hover-effect" href="">Home</a>
+          <a class="footer__link link__hover-effect" href="">About</a>
+          <a class="footer__link link__hover-effect" href="">Books</a>
+          <a class="footer__link link__hover-effect" href="">Contact</a>
+        </div>
+        <p class="footer__copyright">Copyright © 2023 Ibrahim Ahmed</p>
+      </div>
+    </footer>
   </body>
 </html>
