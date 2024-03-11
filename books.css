@@ -370,6 +370,7 @@ footer .link__hover-effect::before {
   }
 
   .fa-star {
+    color: #fabf2a;
     font-size: 12px;
   }
 }
