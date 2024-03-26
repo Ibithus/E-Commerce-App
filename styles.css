@@ -247,6 +247,14 @@ header {
   border: 2px solid #7342d6;
 }
 
+.header__button:hover .browse__link {
+  color: #7342d6;
+}
+
+.header__button:active .browse__link {
+  color: white;
+}
+
 .header__button:active {
   color: white;
   background-color: #7342d6;

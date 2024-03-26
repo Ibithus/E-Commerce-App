@@ -34,7 +34,7 @@ function renderBooks(filter) {
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
       </div>
-      <span class="book__price">$${book.originalPrice.toFixed(2)}</span>
+      <span class="book__price">£${book.originalPrice.toFixed(2)}</span>
     </div>`;
     })
     .join("");
@@ -137,6 +137,14 @@ function getBooks() {
       title: "Mastery",
       url: "./Assets/book-8.jpeg",
       originalPrice: 30,
+      salePrice: null,
+      rating: 4.5,
+    },
+    {
+      id: 12,
+      title: "Can't Hurt Me",
+      url: "./Assets/david goggins.jpeg",
+      originalPrice: 30.00,
       salePrice: null,
       rating: 4.5,
     },
